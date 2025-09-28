@@ -1,0 +1,420 @@
+html {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-x: auto;
+}
+
+:root {
+  --bg-color: #eeeeec;
+  --text-color: #141214;
+  --accent-color1: #C9CAD9;
+  --accent-color2: #66656B;
+  --accent-color3: #C8AD55;
+  --accent-color4: #A9927D;
+}
+
+.darkmode {
+  --bg-color: #141214;
+  --text-color: #eeeeec;
+  --accent-color1: #8C93A8;
+  --accent-color2: #9999A1;
+  --accent-color3: #FCB5B5;
+  --accent-color4: #A9927D;
+}
+
+body {
+  background-color: var(--bg-color);
+  overflow-x: hidden;
+  color: var(--text-color);
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+}
+
+.HeaderName {
+  cursor: pointer;
+  font-family: "Jersey 10";
+  font-style: normal;
+  font-weight: 400;
+  max-width: 90%;
+  margin: 5px;
+}
+
+.NavBar {
+  display: flex;
+  gap: 1rem;
+  right: 0;
+  max-width: 90%;
+}
+
+.NavBar ul {
+  display: flex;
+}
+
+ul li {
+  float: left;
+  margin: 1rem;
+  font-family: "Jersey 10";
+  list-style: none;
+}
+
+ul li a {
+  transition: all 0.10s ease;
+  text-decoration: none;
+  color: var(--accent-color3);
+  cursor: pointer;
+}
+
+/*hero section*/
+#hero {
+  height: 50vh;
+  width: 99vw;
+  max-width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+
+.ITab {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  background-color: var(--accent-color1);
+  border-radius: 15px;
+}
+
+.ITab img {
+  width: 200px;
+  height: 200px;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+.ITab .btg {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-self: center;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.ITab p {
+  display: flex;
+  font-family: "Fascinate"
+}
+
+.discall img{
+  width: 50px;
+  height: 50px;
+}
+
+.discall {
+  display: flex;
+  width: 100px;
+  height: 110px;
+  cursor: pointer;
+  border: none;
+  border-radius: 15px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Jersey 10";
+  transition: all 0.3s ease-in-out;
+  background-color: var(--accent-color3);
+  margin: 5px;
+}
+
+.discall a {
+  text-decoration: none;
+}
+
+.discall:hover {
+  transform: translateY(-5px);
+}
+
+.theme {
+  display: flex;
+  width: 100px;
+  height: 50px;
+  cursor: pointer;
+  border: none;
+  border-radius: 15px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Jersey 10";
+  transition: all 0.3s ease-in-out;
+  background-color: var(--accent-color3);
+  margin: 5px;
+}
+
+.theme:hover {
+  transform: translateY(-5px);
+}
+
+.dbtn {
+  display: flex;
+  flex-direction: row;
+}
+
+.dbtn a {
+  text-decoration: none;
+}
+
+/*Skills*/
+#skills {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 100px;
+}
+
+.sbox {
+  display: flex;
+  border: solid 1px var(--accent-color2);
+  width: 350px;
+  height: 150px;
+  overflow-x: auto;
+  border-radius: 15px;
+}
+
+.tb h1 {
+  font-family: "Jersey 10";
+}
+
+.sbox::-webkit-scrollbar {
+  display: none;
+}
+
+.group {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  animation: spin 15s infinite linear;
+  padding-right: 1em;
+}
+
+.scard {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  flex: 0 0 5em;
+  padding: 1em;
+  height: 8em;
+  background-color: var(--accent-color1);
+  align-content: center;
+  border-radius: 25px;
+  transition: all 0.3s ease-in-out;
+}
+
+.scard:hover {
+  transform: translateY(-5px);
+}
+
+@keyframes spin{
+  from {translate: 0;}
+  to {translate: -100%;}
+}
+
+/*Tools*/
+#tools {
+  display: flex;
+  padding-top: 100px;
+}
+
+.toolbox {
+  display: grid;
+  margin: auto;
+}
+
+.toolbox h1 {
+  font-family: "Jersey 10";
+}
+
+.toolbox p {
+grid-row: 2 / 2;
+grid-column: 1 / 2;
+}
+
+table {
+  border: solid 1px;
+  text-align: center;
+  cursor: pointer;
+}
+
+table th {
+  background-color: var(--accent-color3);
+  color: var(--text-color);
+}
+
+table td {
+  transition: all ease-in-out 0.3s;
+}
+
+table td:hover {
+  transform: translateY(-4px);
+}
+
+/*Graphics*/
+#samples {
+  display: flex;
+  padding: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+.graphicsam {
+  display: flex;
+  max-width: 90%;
+  justify-content: center;
+  flex-direction: column;
+}
+
+
+.gbox {
+  margin: auto;
+  display: flex;
+  width: 700px;
+  height: 400px;
+  overflow-x: auto;
+}
+
+.gbox::-webkit-scrollbar {
+  display: none;
+}
+
+.gcard {
+  height: 10em;
+  flex: 0 0 5em;
+  padding: 1em;
+  align-content: center;
+  transition: all ease-in-out 0.3s;
+}
+
+.gcard:hover {
+  transform: translateY(-5px);
+}
+
+/*Socials*/
+#socials {
+  text-align: center;
+}
+
+.frame {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.frame p {
+  font-family: "Jersey 10";
+  color: var(--accent-color3)
+}
+
+@media screen and (max-width: 425px) {
+  html {
+    display: flex;
+    width: 99%;
+  }
+
+  body {
+    justify-content: center;
+    align-items: center;
+  }
+
+  header {
+    display: flex;
+    gap: 20px;
+    justify-content: start;
+    align-items: start;
+  }
+
+  .HeaderName {
+    margin: 5px;
+  }
+
+  .NavBar {
+    display: flex;
+    justify-content: end;
+    width: 200px;
+    padding: 5px;
+    margin: 5px;
+    gap: 5px;
+  }
+
+  .NavBar ul {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0 0 0 0;
+  }
+
+  .Navbar ul li {
+    padding: 5px;
+    margin: 5px;
+    width: 20px;
+    height: 100px;
+  }
+
+  #hero {
+    padding: 25px;
+  }
+
+  .ITab {
+    width: 350px;
+  }
+
+  .ITab img {
+    display: none;
+  }
+
+  #skills {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .tb {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+  #tools {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .toolbox {
+    text-align: center;
+    margin: 5px;
+    padding: 20px;
+  }
+
+  .context {
+    text-align: center;
+  }
+
+  .frame {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .frame ul {
+    display: flex;
+    flex-direction: column;
+  }
+}
